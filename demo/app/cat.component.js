@@ -1,12 +1,13 @@
-
 var CatComponent = ng.core
   .Component({
     selector: "cat",
     template:
     `
-      Tiddles the Cat
+      <div>Twoodles the Cat {{x}}</div>
     `
   })
   .Class({
-    constructor: function() {}
-  })
+    constructor: function() {
+      this.x = Math.random();
+    }
+  });
